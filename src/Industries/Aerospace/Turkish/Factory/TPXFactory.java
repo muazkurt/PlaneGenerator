@@ -1,11 +1,10 @@
-package Industries.Aerospace.Turkish;
+package Industries.Aerospace.Turkish.Factory;
+
+import Industries.Aerospace.Turkish.Model;
 
 public class TPXFactory
 {
-	public TPXFactory()
-	{}
-
-	public Plane getInstance(Model type) throws Error
+	Plane createPlane(Model type) throws Error
 	{
 		Plane return_val;
 		switch (type)

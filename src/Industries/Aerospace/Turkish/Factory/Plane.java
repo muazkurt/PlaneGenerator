@@ -1,4 +1,8 @@
-package Industries.Aerospace.Turkish;
+package Industries.Aerospace.Turkish.Factory;
+
+import Industries.Aerospace.Turkish.Engine;
+import Industries.Aerospace.Turkish.Model;
+import Industries.Aerospace.Turkish.Skeleton;
 
 public abstract class Plane
 {
@@ -21,4 +25,10 @@ public abstract class Plane
 		System.out.println("Placing Seats for " + _model);
 	}
 
+	@Override
+	public String toString()
+	{
+		return "" + _model + " " + _purpose + " " +
+				       _skeleton + " " + _engine + " " + _seating;
+	}
 }
