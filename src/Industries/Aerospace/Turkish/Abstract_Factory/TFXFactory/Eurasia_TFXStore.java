@@ -16,7 +16,7 @@ public class Eurasia_TFXStore extends TPXStore
 	/**
 	 * Market dependent component generating part of the class.
 	 */
-	PlaneIngredientFactory LocalIngredients;
+	private PlaneIngredientFactory LocalIngredients;
 
 	/**
 	 * Creates a class instance with Eurasia market dependencies.
