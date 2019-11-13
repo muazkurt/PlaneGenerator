@@ -2,17 +2,20 @@ package Industries.Aerospace.Turkish.Factory;
 
 import Industries.Aerospace.Turkish.Model;
 
-public class PlaneStore
+/**
+ * This class is for create Planes with it's TFX factory.
+ */
+public abstract class PlaneStore
 {
-	private TPXFactory my_factory;
-	public PlaneStore()
-	{
-		my_factory = new TPXFactory();
-	}
-
+	abstract Plane createPlane(Model model);
+	/**
+	 * Generate a plane with the given model specialities.
+	 * @param model an Enum to define Plane models.
+	 * @return A freshly generated Plane.
+	 */
 	public Plane getPlane(Model model)
 	{
-		return my_factory.createPlane(model);
+		return createPlane(model);
 	}
 
 }

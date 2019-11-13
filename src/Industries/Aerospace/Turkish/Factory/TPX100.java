@@ -4,6 +4,9 @@ import Industries.Aerospace.Turkish.Engine;
 import Industries.Aerospace.Turkish.Model;
 import Industries.Aerospace.Turkish.Skeleton;
 
+/**
+ * A plane subclass that has its specialities.
+ */
 class TPX100 extends Plane
 {
 	TPX100()
